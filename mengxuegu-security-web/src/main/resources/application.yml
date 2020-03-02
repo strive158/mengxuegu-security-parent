@@ -1,0 +1,24 @@
+server:
+  port: 80
+spring:
+  thymeleaf:
+    cache: false #关闭thymeleaf 缓存
+devtools:
+  livereload:
+    enabled: true #是否支持livereload
+    port: 35729
+  restart:
+    enabled: true #是否支持热部署
+
+
+mengxuegu:
+  security:
+    authentication:
+      loginPage: /login/page
+      loginPrecessingUrl: /login/form
+      usernameParameter: name
+      passwordParameter: pwd
+      staticPath:
+      - /dist/**
+      - /modules/**
+      - /plugins/**
